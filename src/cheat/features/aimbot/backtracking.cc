@@ -227,7 +227,7 @@ namespace features::backtracking {
 		for ( const auto& record : resolved_records ) {
 			const float current_delta = fabs( utilities::math::normalize_yaw( record.eye_angles.y - sideways_rec.eye_angles.y ) );
 			if ( current_delta > highest_delta ) {
-				highest_delta = current_delta;
+				highest_delta = current_delta; // lol pasters wont see this. alpha#9840 was here first :sunglasses:
 				opposite_rec = record;
 			}
 		}
